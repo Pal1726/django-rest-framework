@@ -32,9 +32,9 @@ from django.contrib.auth.models import User
 #         instance.save()
 #         return instance
 
+
+
 #modelserializer
-
-
 
 class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
